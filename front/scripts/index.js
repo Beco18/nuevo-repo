@@ -10,14 +10,20 @@ const createMoviesCart = ({
   poster,
 }) => {
   const tarjeta = document.createElement("div");
+
   tarjeta.innerHTML = `
-        <img src="${poster}" alt="pelicula 1">
-        <h3>${title}</h3>
-        <span>${director}</span>
-        <p>${year}</p>
-        <p>${duration}</p>
-        <p>${genre}</p>
-        <p>${rate}</p>`
+  <div class="tarjetas">
+  <img src="${poster}" alt="pelicula 1">
+  <div class="contenido">
+  <h3>${title}</h3>
+  <span>${director}</span>
+  <p>${year}</p>
+  <p>${duration}</p>
+  <p>${genre}</p>
+  <p>${rate}</p>
+  </div>
+  </div>
+  `
 
   return tarjeta;
 };
