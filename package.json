@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "name": "pm2-beco18-1",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Spady James Beco",
+  "license": "ISC"
+}

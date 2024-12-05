@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Básico</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="reset.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="logo">MOVIES</div>
         <ul class="nav-links">
-            <li><a href="./Pages/inicio.html">Inicio</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
             <li><a href="#">Extrenos</a></li>
             <li><a href="#">Populares</a></li>
             <li><a href="#">Contacto</a></li>
@@ -20,13 +21,31 @@
             <img src="./images/vegeta3.png" alt="Perfil">
             <span>James B.</span>
         </div>
-    </nav>
+    </nav> -->
+    <h1>Inicio</h1>
     <div class="home-image"></div>
+    <ul id="vamos"></ul>
 
-    <div id="containair-tarjetas" class="contenedor">
+<script>
+    const lista = document.getElementById("lista");
+    ["James", "Beco", "Spady", "Nif"].forEach((name) =>{
+        
+        const li = document.createElement("li");
+        li.innerHTML = name;
+        li.classList.add("list-group-item");
+    
+        li.addEventListener("mouseenter",(event) =>{
+            event.target.classList.add("active")
+        });
+        li.addEventListener("mouseleave",(event) =>{
+            event.target.classList.remove("active");
+        });
+        console.log(lista)
+    
+         lista.appendChild(li);
+    
 
-    </div>
-    <script src="./scripts/tempData.js"></script>
-    <script src="./scripts/index.js"></script>
-</body>
+});
+</script>
+    </body>
 </html>

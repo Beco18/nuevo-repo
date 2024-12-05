@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Básico</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./Pages/reset.css">
+    <link rel="stylesheet" href="./Pages/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">MOVIES</div>
         <ul class="nav-links">
-            <li><a href="./Pages/inicio.html">Inicio</a></li>
+            <li><a href="./index.html">Inicio</a>
+                <i class="bi bi-house-door-fill"></i>
+            </li>
             <li><a href="./Pages/extremos.html">Extrenos</a></li>
-            <li><a href="#">Populares</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="./Pages/">Populares</a></li>
+            <li><a href="./Pages/contactos.html">Contacto</a></li>
         </ul>
         <div class="profile">
             <img src="./images/vegeta3.png" alt="Perfil">
@@ -22,10 +25,12 @@
         </div>
     </nav>
     <div class="home-image"></div>
+    <button id="usuario"> Agregar</button>
 
     <div id="containair-tarjetas" class="contenedor">
-
+        
     </div>
+    <ul class="genres-list"></ul>
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
