@@ -1,14 +1,14 @@
 {
   "name": "challenge-testing",
   "version": "1.0.0",
-  "description": "El Testing!!!",
+  "description": "test",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Spady James Beco",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }
