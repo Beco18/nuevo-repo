@@ -30,6 +30,7 @@
   header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding: 20px 10%;
   
@@ -66,17 +67,18 @@
     border-radius: 5px;
 }
 
-body {
+body{
+    font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+    color: var(--text-color);
+  }
 
 
 .form-container {
-    background: #fff;
+    background-image: -webkit-image-set(
+        url("https://files.merca20.com/uploads/2017/07/programacion.jpg") 1x,
+        url("https://files.merca20.com/uploads/2017/07/programacion.jpg") 2x
+    );
     justify-content: center;
     padding: 2rem;
     border-radius: 15px;
@@ -89,17 +91,18 @@ h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    color: #333;
+    color: white;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #555;
+    color: white;
 }
 
 input[type="text"],
+input[type="url"],
 input[type="number"],
 input[type="file"] {
     width: 100%;
@@ -119,7 +122,7 @@ button {
     padding: 0.75rem;
     border: none;
     border-radius: 10px;
-    background-color: #4CAF50;
+    background-color: var(--bg-color);
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
@@ -127,7 +130,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: var(--secon-bg-color);
 }
 
 @media (max-width: 600px) {
@@ -137,5 +140,13 @@ button:hover {
 
     h1 {
         font-size: 1.75rem;
+        color: white;
     }
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+  }
